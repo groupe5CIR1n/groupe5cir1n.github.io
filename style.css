@@ -1,0 +1,165 @@
+/* Header, which is the same for all the pages. */
+#header {
+    background-color: #D9D9D9;
+}
+
+/* Attributes of links in the header. */
+#header a:link {
+    color: black;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+/* Used to keep the same color even after clicking the links in the header. */
+#header a:visited {
+    color: black;
+}
+
+/* Changes the aspect of the page we're currently in. */
+.header_selected {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+/* Applies the flex attribute to all flex classes. */
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* planAccess shouldn't be centered! */
+    flex-grow: 0;
+}
+
+/* Used for planAcces - Items aren't aligned at the center. */
+.flex-uncenter {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 0;
+}
+
+/* Attributes to have all flex items being the same. */
+.flex-item {
+    font-size: 28px;
+    background: none;
+    border: none;
+}
+  
+/* Position needed for the hover and dropbars. */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+/* Dropbar content (Hidden by default, shows when hover) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+}
+  
+/* Changes to the links inside the dropbars. */
+.dropdown-content a {
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+  
+/* Items in the dropbar menu will change color on hover. */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+/* Animation to show the dropbar menu on hover. */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.grid-container {
+    display: grid;
+    row-gap: 20px;
+}
+
+/* Used for titles in pages. */
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+/* Used for titles in sections of pages. */
+h2 {
+    font-size: 30px;
+}
+
+/* Used for red sections of pages. */
+h3 {
+    font-size: 32px;
+    color: #FF0000;
+}
+
+/* Used for black sections of pages. */
+h4 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 20px;
+    padding: 5px;
+}
+
+/* Attributes of all links. */
+a {
+    color: black;
+    text-decoration: none;
+    vertical-align: middle;
+    font-style: italic;
+}
+
+.scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 50%;
+    background-color: #E7E7E7;
+    border: 1px black solid;
+    padding: 2%;
+    width: 500px;
+    height: 75vh;
+    margin: 0 auto;
+    font-size: large;
+}
+
+.descriptionProjet {
+    font-size: 18px;
+}
+
+.infosProjet {
+    font-size: 16px;
+}
+
+/* Useful for responsive centered pictures, especially for the access to the campus. */
+.responsive {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 75%; */
+    width: 500px;
+    height: auto;
+}
+
+.flex-item {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: "Times New Roman";
+    font-style: italic;
+}
+
+li {
+    font-size: 18px;
+}
+
+.verticalLine {
+    border-right: 4px solid black;
+    height: 75vh;
+    margin-left: 25px;
+    margin-right: 25px;
+}
