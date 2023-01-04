@@ -1,5 +1,5 @@
 body {
-    background-image: url(images/background.png);
+    /* background-image: url(images/background.png); */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -56,6 +56,20 @@ body {
     flex-grow: 0;
 }
 
+.flex-partenaires {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 0;
+    flex-wrap: wrap;
+}
+
+.flex-partenaire {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 0;
+    flex-direction: column;
+}
+
 /* Attributes to have all flex items being the same. */
 .flex-item {
     font-size: 28px;
@@ -100,6 +114,9 @@ a .flex-item-header_select {
     display: none;
     position: absolute;
     background-color: #FA0404;
+    min-width: 160px;
+    box-shadow: 0px 18px 6px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
   
 /* Changes to the links inside the dropbars. */
@@ -129,15 +146,30 @@ a .flex-item-header_select {
 
 /* Used for titles in pages. */
 h1 {
-    text-align: center;
-    font-weight: bold;
+    text-align: left;
+    font-weight: normal;
     font-size: 40px;
-    margin-bottom: 75px;
+    color: red;
+
+    background-color: #E9E3E3;
+    padding-bottom: 100px;
+
+    margin-left: 50px;
+    margin-right: 50px;
+
+    padding-top: 50px;
+    padding-left: 50px;
 }
 
 /* Used for titles in sections of pages. */
 h2 {
-    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+
+    background-color: #D9D9D9;
+    padding-bottom: 5px;
+    border-radius: 10px;
 }
 
 /* Used for red sections of pages. */
@@ -233,3 +265,27 @@ li {
     border-top: 5px solid #095484;
     width: 500px;
 } */
+
+.background {
+    position: absolute;
+    width: 100px;
+    height: 1000px;
+    top: -200px;
+
+    background: red;
+    transform: rotate(45deg);
+
+    z-index: -1;
+}
+
+.gray-bg {
+    background-color: #E9E3E3;
+    border-radius: 10px;
+}
+
+.tag {
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #B9B9B9;
+}
