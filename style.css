@@ -68,6 +68,7 @@ body {
     justify-content: space-around;
     flex-grow: 0;
     flex-direction: column;
+    padding: 50px;
 }
 
 /* Attributes to have all flex items being the same. */
@@ -223,8 +224,8 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* width: 75%; */
-    width: 500px;
+    width: 75%;
+    /* width: 500px; */
     height: auto;
 }
 
@@ -288,4 +289,5 @@ li {
     padding: 5px;
     border-radius: 10px;
     background-color: #B9B9B9;
+    border: 10px;
 }
