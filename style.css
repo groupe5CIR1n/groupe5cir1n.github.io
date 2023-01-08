@@ -56,11 +56,12 @@ body {
     flex-grow: 0;
 }
 
-.flex-partenaires {
+.flex-tags {
     display: flex;
     justify-content: space-around;
     flex-grow: 0;
     flex-wrap: wrap;
+    height: auto;
 }
 
 .flex-partenaire {
@@ -70,6 +71,14 @@ body {
     flex-direction: column;
     padding: 50px;
 }
+
+.flex-membres {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
 
 /* Attributes to have all flex items being the same. */
 .flex-item {
@@ -184,6 +193,13 @@ h4 {
     font-size: 32px;
 }
 
+/* Used for members. */
+h5 {
+    font-size: 30px;
+    font-weight:bold;
+    text-align: center;
+}
+
 p {
     font-size: 20px;
     padding: 5px;
@@ -285,9 +301,94 @@ li {
 }
 
 .tag {
-    font-size: 20px;
+    font-size: 16px;
     padding: 5px;
     border-radius: 10px;
-    background-color: #B9B9B9;
+    background-color: #6e717d;
     border: 10px;
+    color: white;
+    margin: 2px;
+}
+
+.trapezoidL {
+    border-bottom: 100px solid;
+    border-left: 100px solid transparent;
+    height: 0;
+    width: 350px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.trapezoidR {
+    border-bottom: 100px solid;
+    border-right: 100px solid transparent;
+    height: 0;
+    width: 350px;
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    justify-self: right;
+}
+
+.spe1 {
+    color: #7004FA;
+}
+
+.spe2 {
+    color: #7a06f9;
+}
+
+.spe3 {
+    color: #8208f8;
+}
+
+.spe4 {
+    color: #8a0bf7;
+}
+
+.spe5 {
+    color: #920ff6;
+}
+
+.text-spe {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-membre {
+    display: grid;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    flex-basis: 20%;
+}
+
+.grid-membre:hover {
+    animation-name: membre-background;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes membre-background {
+    0% {background-color: white; color: black;}
+    100% {background-color: gray; color: white;}
+}
+
+.membre {
+    border-radius: 50%;
+    max-width: 200px;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+.description-membre {
+    text-align: center;
 }
