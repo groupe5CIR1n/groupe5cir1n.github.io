@@ -184,6 +184,20 @@ h4 {
     font-size: 32px;
 }
 
+h5{
+    position : absolute;
+    width: 738px;
+    height: 130px;
+    left: 351px;
+    top: 126px;
+    color: #000000;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 38px;
+}
+
 p {
     font-size: 20px;
     padding: 5px;
