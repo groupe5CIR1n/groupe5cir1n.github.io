@@ -195,9 +195,11 @@ h4 {
     font-size: 32px;
 }
 
+
+
 /* Used for members. */
 
-h5{
+h6{
     color: #000000;
     font-family: 'Inter';
     font-style: italic;
@@ -206,7 +208,7 @@ h5{
     line-height: 38px;
 }
 
-h5.contact{
+h6.contact{
     height: auto;
     width: 150;
     margin-left: 200px;
