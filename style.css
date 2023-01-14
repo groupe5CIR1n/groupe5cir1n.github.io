@@ -8,6 +8,7 @@ body {
 /* Header, which is the same for all the pages. */
 #header {
     background-color: #FA0404;
+    box-shadow: 4px 4px 4px 4px white;
 }
 
 /* Attributes of links in the header. */
@@ -480,9 +481,9 @@ li {
 
 #layout-OffreDEemploi {
     display: grid;
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: repeat(4,auto);
     grid-template-columns: repeat(3,auto);
-    grid-row-gap:10px;
+    grid-row-gap:20px;
     grid-column-gap: 20px;
 }
 
@@ -497,16 +498,18 @@ li {
     padding-block: 5px;
     grid-row:1;
     padding:10px;
+    font-size: 20px;
 }
 
 #Emploi-box{
     vertical-align:text-bottom;
     background-color: #E9E3E3;
     box-sizing : border-box;
-    height:100px;
+    height:150px;
     border-radius:5px;
     text-align: center;
     padding:20px;
+    font-size: 20px;
 }
 
 #point{
@@ -515,6 +518,7 @@ li {
     height:25px;
     border-radius:5px;
     text-align: center;
+    font-size: 20px;
 }
 
 #none{

@@ -506,6 +506,7 @@ li {
     padding-block: 5px;
     grid-row:1;
     padding:10px;
+    font-size: 20px;
 }
 
 #Emploi-box{
@@ -516,6 +517,7 @@ li {
     border-radius:5px;
     text-align: center;
     padding:20px;
+    font-size: 20px;
 }
 
 #point{
@@ -524,6 +526,7 @@ li {
     height:25px;
     border-radius:5px;
     text-align: center;
+    font-size: 20px;
 }
 
 #none{
