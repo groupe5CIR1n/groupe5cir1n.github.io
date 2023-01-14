@@ -154,6 +154,20 @@ a .flex-item-header_select {
 .grid-container {
     display: grid;
     row-gap: 20px;
+    column-gap:20px;
+}
+
+.mouvmentblock{
+    width: 100px;
+    height: 20px;
+    background: red;
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+}
+
+.mouvmentblock:hover {
+    width: 150px;
 }
 
 /* Used for titles in pages. */
@@ -195,8 +209,6 @@ h4 {
     font-size: 32px;
 }
 
-
-
 /* Used for members. */
 
 h6{
@@ -216,7 +228,12 @@ h6.contact{
     text-align: center;
 }
 
-
+h7{
+    text-align: left;
+    font-weight: normal;
+    font-size: 40px;
+    color: red;
+}
 
 
 input[type=text], textarea, input[type=email] {
@@ -513,6 +530,44 @@ li {
     background-color:#FFF;
     opacity: 0%;
 }
+
+/* thématique de recherche */
+h4#thematique{
+    text-align: center;
+}
+
+#title-text{
+    grid-row-start:1;
+    grid-row-end:3;
+    grid-column-start:1;
+    grid-column-end:2;
+
+    padding:20px;
+    background-color:#E9E3E3;
+}
+
+#axe1{
+    grid-row-start:1;
+    grid-row-end:2;
+    grid-column-start:2;
+    grid-column-end:3;
+
+    padding:20px;
+    background-color:#E9E3E3;
+    border-radius: 20px;
+}
+
+#axe2{
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:2;
+    grid-column-end:3;
+
+    padding:20px;
+    background-color:#E9E3E3;
+    border-radius: 20px;
+}
+
 
 /* footer */
 

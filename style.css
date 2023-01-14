@@ -153,6 +153,20 @@ a .flex-item-header_select {
 .grid-container {
     display: grid;
     row-gap: 20px;
+    column-gap:20px;
+}
+
+.mouvmentblock{
+    width: 100px;
+    height: 20px;
+    background: red;
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+}
+
+.mouvmentblock:hover {
+    width: 150px;
 }
 
 /* Used for titles in pages. */
@@ -192,6 +206,23 @@ h3 {
 /* Used for black sections of pages. */
 h4 {
     font-size: 32px;
+}
+
+h6{
+    color: #000000;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 38px;
+}
+
+h6.contact{
+    height: auto;
+    width: 150;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
 }
 
 /* Used for members. */
@@ -489,4 +520,47 @@ li {
 #none{
     background-color:#FFF;
     opacity: 0%;
+}
+
+h4#thematique{
+    text-align: center;
+}
+
+#title-text{
+    grid-row-start:1;
+    grid-row-end:3;
+    grid-column-start:1;
+    grid-column-end:2;
+
+    padding:20px;
+    background-color:#E9E3E3;
+}
+
+#axe1{
+    grid-row-start:1;
+    grid-row-end:2;
+    grid-column-start:2;
+    grid-column-end:3;
+
+    padding:20px;
+    background-color:#E9E3E3;
+    border-radius: 20px;
+}
+
+#axe2{
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:2;
+    grid-column-end:3;
+
+    padding:20px;
+    background-color:#E9E3E3;
+    border-radius: 20px;
+}
+
+h7{
+    text-align: left;
+    font-weight: normal;
+    font-size: 40px;
+    color: red;
 }
