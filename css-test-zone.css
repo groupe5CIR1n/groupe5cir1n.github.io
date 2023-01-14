@@ -563,3 +563,10 @@ div.linkedin{
     grid-row-end:5;
 }
 
+#EVAN#linkName{
+    grid-column-start:1;
+}
+
+#EVAN#linklogo{
+    grid-column-start:2;
+}
