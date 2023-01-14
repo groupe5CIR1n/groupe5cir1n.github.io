@@ -8,6 +8,7 @@ body {
 /* Header, which is the same for all the pages. */
 #header {
     background-color: #FA0404;
+    box-shadow: 4px 4px 4px 4px white;
 }
 
 /* Attributes of links in the header. */
@@ -458,35 +459,107 @@ li {
     text-align: center;
 }
 
+/* offre d'emploi */
+
+#layout-OffreDEemploi {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3,auto);
+    grid-row-gap:50px;
+    grid-column-gap: 20px;
+}
+
+#type-emploi{
+    background-color: #BBBBBB;
+    box-sizing : border-box;
+    border-radius:5px;
+    text-align: center;
+    padding-block: 5px;
+    grid-row:1;
+}
+
+#Emploi-box{
+    background-color: #E9E3E3;
+    box-sizing : border-box;
+    border-radius:5px;
+    text-align: center;
+}
+
+#point{
+    background-color: #E9E3E3;
+    box-sizing : border-box;
+    border-radius:5px;
+    text-align: center;
+}
+
+#none{
+    background-color: #FFFFFFFF;
+}
+
 /* footer */
-#trapeze1 {
-    height: -700px;
-    width: 200px;
-    border-top: 100px solid #FA0404;
-    border-left: 0px solid transparent;
-    border-right: 75px solid transparent;
+
+
+footer{
+    
 }
 
-/* #bande1{
-    height: 100px;
-    width: 200px;
-    border-top: 100px solid #FA0404;
-    border-bottom-right-radius:100px solid #FA0404;
-    border-left: 0px solid transparent;
-    border-top-right-radius: 75px solid transparent;
-} */
+.degrade-horizontal {
+    background: linear-gradient(to right, red, white);
+    
+  }
+  
+div.degrade-horizontal {
+    height: 120px;
+    width: auto;
+}
 
-#bande1{
-    width  : 100px;
-    height : 0;
-    border-top  : 50px solid red;
-    border-left : 20px solid transparent;
+div.specification{
+    color:white;
+    fill: #000000;
+    display:grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(4,auto);
 }
-#bande1:after {
-    width  : 0;
-    height : 0;
-    content: '';
-    border-bottom : 50px solid red;
-    border-right  : 20px solid transparent;
-    border-left   : 20px solid transparent;
+
+div.Brest{
+    grid-row-start:1;
+    grid-row-end:2;
 }
+
+div.Caen{
+    grid-row-start:2;
+    grid-row-end:3;
+}
+
+div.Nantes{
+    grid-row-start:3;
+    grid-row-end:4;   
+}
+
+div.Rennes{
+    grid-row-start:4;
+    grid-row-end:5; 
+}
+
+#name{
+    grid-column-start:1;
+    grid-column-end:2;
+}
+
+#phone-number{
+    grid-column-start:2;
+    grid-column-end:3;
+}
+
+#adresse{
+    grid-column-start:3;
+    grid-column-end:4;
+}
+
+div.linkedin{
+    color:white;
+    fill: #000000;
+    grid-row-start:4;
+    grid-row-end:5;
+}
+
