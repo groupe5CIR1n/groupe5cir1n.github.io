@@ -437,3 +437,56 @@ li {
 .description-membre {
     text-align: center;
 }
+
+/* offre d'emploi */
+#content{
+    box-sizing: border-box;
+    border-radius: 25px;
+    background-color:#E9E3E3;
+    padding:20px;
+}
+
+
+#layout-OffreDEemploi {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3,auto);
+    grid-row-gap:10px;
+    grid-column-gap: 20px;
+}
+
+#type-emploi{
+    /* margin-left:auto;
+    margin-right:auto; */
+    background-color: #BBBBBB;
+    box-sizing : border-box;
+    height:50px;
+    border-radius:5px;
+    text-align: center;
+    padding-block: 5px;
+    grid-row:1;
+    padding:10px;
+}
+
+#Emploi-box{
+    vertical-align:text-bottom;
+    background-color: #E9E3E3;
+    box-sizing : border-box;
+    height:100px;
+    border-radius:5px;
+    text-align: center;
+    padding:20px;
+}
+
+#point{
+    background-color: #E9E3E3;
+    box-sizing : border-box;
+    height:25px;
+    border-radius:5px;
+    text-align: center;
+}
+
+#none{
+    background-color:#FFF;
+    opacity: 0%;
+}
