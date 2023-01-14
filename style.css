@@ -196,24 +196,6 @@ h4 {
 
 /* Used for members. */
 
-h5{
-    color: #000000;
-    font-family: 'Inter';
-    font-style: italic;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 38px;
-}
-
-h5.contact{
-    height: auto;
-    width: 150;
-    margin-left: 200px;
-    margin-right: 200px;
-    text-align: center;
-}
-
-
 input[type=text], textarea, input[type=email] {
     width: 100%;
     padding: 12px;
