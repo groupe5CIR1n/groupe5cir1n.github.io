@@ -631,6 +631,7 @@ img#image{
 }
 
 #presentation-text{
+    max-width: 700px;
     padding:10px;
     background-color:#E9E3E3;
     grid-row-start:1;
@@ -642,14 +643,21 @@ img#image{
 #view-buton{
     background-color: #D9D9D9;
     border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
 }
 
 #img{
+    max-block-size: 316px 140px;
     grid-row-start:3;
     grid-row-end:5;
     grid-column-start:1;
     grid-column-end:2;
-    border: 1px solid red;
+    border: 2px solid red;
+    padding : 0px;
 }
 
 #titre-actu{
@@ -659,20 +667,27 @@ img#image{
     grid-row-end:2;
     grid-column-start:2;
     grid-column-end:3;
-    border: 1px solid red;
 }
 
 .cartes-actu{
-    background-color:#E9E3E3 ;
+    background-color: #E9E3E3;
     box-shadow: 10px 5px 5px grey;
-    transition-property: background-color;
     transition-duration: 1s;
-    border: 1px solid red;
+    padding:10px;
+    border-radius: 25px;
 }
 
-.carte-actu:hover{
-    background-color:#6e717d ;
+.cartes-actu:hover {
+    animation-name: cartes-actu;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
+
+@keyframes cartes-actu {
+    0% {background-color: #E9E3E3; color: black;}
+    100% {background-color: gray; color: white;}
+}
+
 
 #carte-one{
     grid-row-start:2;

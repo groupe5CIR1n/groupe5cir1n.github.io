@@ -164,6 +164,7 @@ a .flex-item-header_select {
     transition-property: width;
     transition-duration: 1s;
     transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+    grid-row-start: 2;
 }
 
 .mouvmentblock:hover {
@@ -185,6 +186,10 @@ h1 {
 
     padding-top: 50px;
     padding-left: 50px;
+
+    display:grid;
+    grid-template-columns: 1fr 75px;
+    grid-template-row:repeat(2,auto);
 }
 
 /* Used for titles in sections of pages. */
@@ -603,4 +608,103 @@ img#image{
     padding:20px;
     background-color:#E9E3E3;
     border-radius: 20px;
+}
+
+/* acceuil */
+.flex-acceuil{
+    display :grid;
+    grid-template-rows: repeat(4,auto);
+    grid-template-columns: repeat(2,auto);
+    grid-column-gap: 20px;
+    grid-row-gap:20px;
+}
+
+#presentation-text{
+    max-width: 700px;
+    padding:10px;
+    background-color:#E9E3E3;
+    grid-row-start:1;
+    grid-row-end:3;
+    grid-column-start:1;
+    grid-column-end:2;
+}
+
+#view-buton{
+    background-color: #D9D9D9;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+}
+
+#img{
+    max-block-size: 316px 140px;
+    grid-row-start:3;
+    grid-row-end:5;
+    grid-column-start:1;
+    grid-column-end:2;
+    border: 2px solid red;
+    padding : 0px;
+}
+
+#titre-actu{
+    background-color:#E9E3E3 ;
+    text-align: center;
+    grid-row-start:1;
+    grid-row-end:2;
+    grid-column-start:2;
+    grid-column-end:3;
+}
+
+.cartes-actu{
+    background-color: #E9E3E3;
+    box-shadow: 10px 5px 5px grey;
+    transition-duration: 1s;
+    padding:10px;
+    border-radius: 25px;
+}
+
+.cartes-actu:hover {
+    animation-name: cartes-actu;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cartes-actu {
+    0% {background-color: #E9E3E3; color: black;}
+    100% {background-color: gray; color: white;}
+}
+
+
+#carte-one{
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:2;
+    grid-column-end:3;
+}
+
+#carte-two{
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:3;
+    grid-column-end:4;
+}
+
+#carte-three{
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:4;
+    grid-column-end:5;
+}
+
+div.material-symbols-outlined {
+    color:#000000;
+    grid-column-start:2 ;
+    grid-column-end:3;
+    grid-row-start:1;
+    grid-row-end:3;
+    padding:10px;
+    /* border:5px solid black; */
 }
