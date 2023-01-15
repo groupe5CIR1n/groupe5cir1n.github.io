@@ -164,6 +164,8 @@ a .flex-item-header_select {
     transition-property: width;
     transition-duration: 1s;
     transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+    grid-row-start:2;
+    grid-row-end:3;
 }
 
 .mouvmentblock:hover {
@@ -178,13 +180,26 @@ h1 {
     color: red;
 
     background-color: #E9E3E3;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 
     margin-left: 50px;
     margin-right: 50px;
 
     padding-top: 50px;
     padding-left: 50px;
+
+    display:grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-row: repeat(2,auto);
+}
+
+div.material-symbols-outlined {
+    color:#000000;
+    grid-column-start:2 ;
+    grid-column-end:3;
+    grid-row-start:1;
+    grid-row-end:3;
+    border:5px solid black;
 }
 
 /* Used for titles in sections of pages. */
@@ -209,8 +224,6 @@ h4 {
     font-size: 32px;
 }
 
-/* Used for members. */
-
 h6{
     color: #000000;
     font-family: 'Inter';
@@ -228,13 +241,7 @@ h6.contact{
     text-align: center;
 }
 
-h7{
-    text-align: left;
-    font-weight: normal;
-    font-size: 40px;
-    color: red;
-}
-
+/* Used for members. */
 
 input[type=text], textarea, input[type=email] {
     width: 100%;
@@ -489,9 +496,9 @@ li {
 
 #layout-OffreDEemploi {
     display: grid;
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: repeat(4,auto);
     grid-template-columns: repeat(3,auto);
-    grid-row-gap:10px;
+    grid-row-gap:20px;
     grid-column-gap: 20px;
 }
 
@@ -513,7 +520,7 @@ li {
     vertical-align:text-bottom;
     background-color: #E9E3E3;
     box-sizing : border-box;
-    height:100px;
+    height:150px;
     border-radius:5px;
     text-align: center;
     padding:20px;
@@ -534,7 +541,6 @@ li {
     opacity: 0%;
 }
 
-/* thématique de recherche */
 h4#thematique{
     text-align: center;
 }
@@ -563,6 +569,49 @@ h4#thematique{
 #axe2{
     grid-row-start:2;
     grid-row-end:3;
+    grid-column-start:2;
+    grid-column-end:3;
+
+    padding:20px;
+    background-color:#E9E3E3;
+    border-radius: 20px;
+}
+
+h7{
+    text-align: left;
+    font-weight: normal;
+    font-size: 40px;
+    color: red;
+}
+
+/* plateforme technologique */
+.techno-flex{
+    display :grid;
+    grid-template-rows: repeat(1,auto);
+    grid-template-columns: repeat(2,auto);
+    grid-column-gap: 20px;
+}
+
+#card-one{
+    grid-row-start:1;
+    grid-row-end:2;
+    grid-column-start:1;
+    grid-column-end:2;
+
+    padding:20px;
+    background-color:#E9E3E3;
+    border-radius: 20px;
+}
+
+img#image{
+    image-rendering: optimizeQuality;
+    padding-left: 20px;
+    padding-right: auto;
+}
+
+#card-two{
+    grid-row-start:1;
+    grid-row-end:2;
     grid-column-start:2;
     grid-column-end:3;
 
