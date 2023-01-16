@@ -189,7 +189,7 @@ h1 {
 
     display:grid;
     grid-template-columns: 1fr 75px;
-    grid-template-row:repeat(2,auto);
+    grid-template-rows: repeat(2,auto);
 }
 
 /* Used for titles in sections of pages. */
@@ -212,6 +212,14 @@ h3 {
 /* Used for black sections of pages. */
 h4 {
     font-size: 32px;
+}
+
+h5 {
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 30px;
+
+    text-align: center;
 }
 
 h6{
